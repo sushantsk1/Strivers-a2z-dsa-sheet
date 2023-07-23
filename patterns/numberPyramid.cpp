@@ -9,28 +9,21 @@ int main(){
   {
     for ( j = 1; j <=i; j++)
     {
-        cout<<" * ";
+        cout<<i;
     }
    cout<<endl; 
   }
 
-
-
-  //right side pyramid
-  for ( i = 1; i <=n; i++)
+  //another one
+  int counter=1;
+  for ( i = 1; i < n; i++)
   {
-   for (j = 1; j<=n; j++)
-   {
-   if (j<=n-i)
-   {
-    cout<<" ";
-
-   }
-   else
-   cout<<"*";
-   
-   }
-   cout<<endl;
+    for ( j = 1; j<=i; j++)
+    {
+      cout<<counter<<" ";
+    counter++;
+    }
+    cout<<endl;
   }
   
 }
